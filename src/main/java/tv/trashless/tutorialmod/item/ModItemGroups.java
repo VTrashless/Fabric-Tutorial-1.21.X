@@ -11,6 +11,7 @@ import tv.trashless.tutorialmod.TutorialMod;
 import tv.trashless.tutorialmod.block.ModBlocks;
 
 public class ModItemGroups {
+
     public static final ItemGroup PINK_GARNET_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(TutorialMod.MOD_ID, "pink_garnet_items"),
             FabricItemGroup.builder()
@@ -36,6 +37,9 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.PINK_GARNET_ORE);
                         entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+
+                        //functional blocks
+                        entries.add(ModBlocks.MAGIC_BLOCK);
                     })
                     .build());
 

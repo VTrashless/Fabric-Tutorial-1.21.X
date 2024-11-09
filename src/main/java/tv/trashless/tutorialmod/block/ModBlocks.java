@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import tv.trashless.tutorialmod.TutorialMod;
+import tv.trashless.tutorialmod.block.functional.MagicBlock;
 
 public class ModBlocks {
     public static final Block RAW_PINK_GARNET_BLOCK = registerBlock("raw_pink_garnet_block",
@@ -38,6 +39,11 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.DEEPSLATE)));
+
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create()
+                    .strength(2f)
+                    .requiresTool()));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
