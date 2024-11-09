@@ -19,6 +19,9 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_PINK_GARNET);
                         entries.add(ModItems.PINK_GARNET);
+
+                        //functional items
+                        entries.add(ModItems.CHISEL);
                     })
                     .build());
 
