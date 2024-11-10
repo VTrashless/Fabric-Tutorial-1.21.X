@@ -8,5 +8,5 @@ public class ModFoodComponents {
     public static final FoodComponent CAULIFLOWER = new FoodComponent.Builder()
             .nutrition(4)
             .saturationModifier(0.5f)
-            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 30*20), .2f).build();
+            .statusEffect(new StatusEffectInstance(StatusEffects.HASTE, 30*20, 100), .2f).build();
 }
